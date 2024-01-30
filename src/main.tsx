@@ -10,14 +10,14 @@ import Footer from "./components/Footer";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <Navbar />
     <BrowserRouter>
+      <Navbar />
       <Routes>
         <Route element={<Home />} path="/" />
         <Route element={<Recipies />} path="/recipies" />
         <Route element={<RecipesDetail />} path="/recipies/:id" />
       </Routes>
+      <Footer />
     </BrowserRouter>
-    <Footer />
   </React.StrictMode>
 );
