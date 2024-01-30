@@ -1,10 +1,11 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
+
 import "swiper/css";
 import "swiper/css/navigation";
 import "../../styles/ButtonsSwiperRecetas.css";
 import { recetas } from "../../data/recetas";
 import CardRecetas from "../CardRecetas";
+import SliderButtons from "../sliderButtons";
 export default function Recetas() {
   return (
     <section className="my-24">
@@ -20,7 +21,12 @@ export default function Recetas() {
         muy deliciosas para que cocines en ese momento especial.
       </p>
       <article className="flex justify-center items-center">
-        <Swiper modules={[Navigation]} navigation className="mySwiper">
+        <Swiper className="mySwiper">
+          <SliderButtons
+            className="flex items-center justify-between absolute top-1/2 left-0 w-full px-6 z-10"
+            btnNext="next"
+            btnPrev="prev"
+          />
           {recetas.map((r, key) => {
             return (
               <SwiperSlide key={key}>
