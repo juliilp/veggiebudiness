@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { IoMdMenu } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 export default function NavbarMobile() {
   const [switchMenu, setSwitchMenu] = useState(false);
@@ -11,11 +12,19 @@ export default function NavbarMobile() {
       <IoMdMenu onClick={handlerSwitchMenu} size={35} className="mr-4" />
 
       {switchMenu && (
-        <ul className="absolute top-full w-full flex flex-col items-center gap-2 text-xl">
-          <li>Home</li>
+        <ul className="absolute top-full w-full flex flex-col items-center gap-2 text-xl bg-white ">
+          <li>
+            <Link to="/" onClick={handlerSwitchMenu}>
+              Home
+            </Link>
+          </li>
           <li>About us</li>
           <li>Products</li>
-          <li>Recipies</li>
+          <li>
+            <Link to="/recipies" onClick={handlerSwitchMenu}>
+              Recipies
+            </Link>
+          </li>
           <li>Contact us</li>
           <li>Follow us</li>
         </ul>
