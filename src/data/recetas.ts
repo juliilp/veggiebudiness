@@ -1,4 +1,5 @@
 interface Recetas {
+  id: number;
   nombre: string;
   tiempo: string;
   ingredientes: string[];
@@ -10,6 +11,7 @@ interface Recetas {
 
 const recetas: Recetas[] = [
   {
+    id: 1,
     nombre: "Brownie saludable",
     tiempo: "40 minutos",
     ingredientes: [
@@ -31,6 +33,7 @@ const recetas: Recetas[] = [
     imagen: "https://i.imgur.com/ZHFLcvf.jpg",
   },
   {
+    id: 2,
     nombre: "Licuado de banana",
     tiempo: "10 minutos",
     ingredientes: [
@@ -46,6 +49,7 @@ const recetas: Recetas[] = [
     imagen: "https://i.imgur.com/R6k8Rpe.jpg",
   },
   {
+    id: 3,
     nombre: "Empanadas de soja texturizada",
     tiempo: "1 hora",
     ingredientes: [
@@ -68,6 +72,7 @@ const recetas: Recetas[] = [
     imagen: "https://i.imgur.com/1eIBOD0.jpg",
   },
   {
+    id: 4,
     nombre: "Milanesas de soja",
     tiempo: "40 minutos",
     ingredientes: [
@@ -84,6 +89,7 @@ const recetas: Recetas[] = [
     imagen: "https://i.imgur.com/h9cOsBY.jpg",
   },
   {
+    id: 5,
     nombre: "Granola",
     tiempo: "30 minutos",
     ingredientes: [
@@ -98,6 +104,7 @@ const recetas: Recetas[] = [
     imagen: "https://i.imgur.com/LIvjZ7m.jpg",
   },
   {
+    id: 6,
     nombre: "Cookies saludables",
     tiempo: "40 minutos",
     ingredientes: [
