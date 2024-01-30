@@ -1,5 +1,9 @@
-import React from "react";
+import MainRecipes from "../components/Recipies/MainRecipes";
 
 export default function Recipies() {
-  return <div>Recipies</div>;
+  return (
+    <>
+      <MainRecipes />
+    </>
+  );
 }

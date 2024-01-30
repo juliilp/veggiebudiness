@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function NavbarDesktop() {
   return (
     <header className="w-full">
@@ -7,7 +9,9 @@ export default function NavbarDesktop() {
           <li>About us</li>
           <li>Products</li>
           <li className="hidden lg:block">Veggie budiness</li>
-          <li>Recipies</li>
+          <li>
+            <Link to="/recipies">Recipies</Link>
+          </li>
           <li>Contact us</li>
           <li>Follow us</li>
         </ul>
