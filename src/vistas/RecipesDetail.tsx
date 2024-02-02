@@ -15,7 +15,7 @@ export default function RecipesDetail() {
     return <h2>No hay card</h2>;
   }
   return (
-    <section className="flex flex-col gap-12 font-playfairDisplay">
+    <section className="flex flex-col gap-12 font-playfairDisplay mt-12">
       <h2 className="text-center text-3xl md:text-5xl font-lobsterTwo">
         {card.nombre}
       </h2>
