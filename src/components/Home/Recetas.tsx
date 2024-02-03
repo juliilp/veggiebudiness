@@ -22,11 +22,7 @@ export default function Recetas() {
       </p>
       <article className="flex justify-center items-center">
         <Swiper className="mySwiper">
-          <SliderButtons
-            className="flex items-center justify-between absolute top-1/2 left-0 w-full px-6 z-10"
-            btnNext="next"
-            btnPrev="prev"
-          />
+          <SliderButtons className="flex items-center justify-between absolute top-1/2 left-0 w-full px-6 z-10" />
           {recetas.map((r, key) => {
             return (
               <SwiperSlide key={key}>
