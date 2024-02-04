@@ -6,6 +6,7 @@ import "../../styles/ButtonsSwiperRecetas.css";
 import { recetas } from "../../data/recetas";
 import CardRecetas from "../CardRecetas";
 import SliderButtons from "../sliderButtons";
+import { sliderSettings } from "../../data/sliderSettings";
 export default function Recetas() {
   return (
     <section className="my-24">
@@ -21,7 +22,7 @@ export default function Recetas() {
         muy deliciosas para que cocines en ese momento especial.
       </p>
       <article className="flex justify-center items-center">
-        <Swiper className="mySwiper">
+        <Swiper className="mySwiper" {...sliderSettings}>
           <SliderButtons className="flex items-center justify-between absolute top-1/2 left-0 w-full px-6 z-10" />
           {recetas.map((r, key) => {
             return (
