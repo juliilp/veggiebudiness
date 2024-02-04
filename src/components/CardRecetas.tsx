@@ -9,7 +9,7 @@ export default function CardRecetas({ nombre, imagen }: Props) {
       <img
         src={imagen}
         alt="Imagen"
-        className="w-[300px] h-[250px]"
+        className="w-full max-w-[450px] h-[350px] md:w-[450px] object-cover px-4"
         loading="lazy"
       />
     </article>

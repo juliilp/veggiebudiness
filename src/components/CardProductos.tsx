@@ -13,7 +13,7 @@ export default function CardProductos({
       <img
         src={imagen}
         alt="Imagen"
-        className="w-full max-w-[450px] h-[350px] px-4"
+        className="w-full max-w-[450px] h-[350px] px-4 object-cover"
         loading="lazy"
       />
       <p className="font-aleo text-center max-w-[400px] text-lg ">
