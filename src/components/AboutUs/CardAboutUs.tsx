@@ -10,8 +10,10 @@ export default function CardAboutUs({ title, text, list }: Props) {
       {text && <p className="text-center max-w-[350px] text-xl">{text}</p>}
       {list && (
         <ul className="flex flex-col items-center gap-1">
-          {list.map((l) => (
-            <li className="text-xl">{l}</li>
+          {list.map((l, key) => (
+            <li className="text-xl" key={key}>
+              {l}
+            </li>
           ))}
         </ul>
       )}
