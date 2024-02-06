@@ -7,6 +7,7 @@ import RecipesDetail from "./vistas/RecipesDetail";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer";
 import ArrowButtomRight from "./components/ArrowButtomRight";
+import AboutUs from "./vistas/AboutUs";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <main className="relative">
@@ -16,6 +17,8 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
         <Route element={<Home />} path="/" />
         <Route element={<Recipies />} path="/recipies" />
         <Route element={<RecipesDetail />} path="/recipies/:id" />
+        <Route element={<AboutUs />} path="/sobre-nosotros" />
+        <Route element={<Home />} path="/**" />
       </Routes>
       <Footer />
       <ArrowButtomRight />
