@@ -1,4 +1,3 @@
-import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
@@ -7,9 +6,10 @@ import Recipies from "./vistas/Recipies";
 import RecipesDetail from "./vistas/RecipesDetail";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer";
+import ArrowButtomRight from "./components/ArrowButtomRight";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
-  <React.StrictMode>
+  <main className="relative">
     <BrowserRouter>
       <Navbar />
       <Routes>
@@ -18,6 +18,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
         <Route element={<RecipesDetail />} path="/recipies/:id" />
       </Routes>
       <Footer />
+      <ArrowButtomRight />
     </BrowserRouter>
-  </React.StrictMode>
+  </main>
 );

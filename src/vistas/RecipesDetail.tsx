@@ -22,7 +22,7 @@ export default function RecipesDetail() {
       <img
         src={card.imagen}
         alt="imagen"
-        className=" w-full max-w-[400px] h-[300px] mx-auto  object-cover rounded-xl"
+        className=" w-full max-w-[450px]  h-[300px] mx-auto  object-cover rounded-xl object-cover"
       />
 
       <div className="w-[90%] h-[1px] border border-[#868383] bg-[#868383] mx-auto" />
