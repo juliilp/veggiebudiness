@@ -4,7 +4,7 @@ export default function NavbarDesktop() {
   return (
     <header className="w-full">
       <nav>
-        <ul className="px-4 justify-evenly  items-center hidden md:flex absolute left-0 top-0 z-[999] w-full text-white text-xl pt-6">
+        <ul className="px-4 justify-evenly  items-center hidden md:flex absolute left-0 top-0 z-[999] w-full text-white text-xl pt-6 font-lato">
           <li>Home</li>
           <li>About us</li>
           <li>Products</li>
