@@ -4,7 +4,7 @@ import Section3 from "../components/AboutUs/Section3";
 
 export default function AboutUs() {
   return (
-    <main className="flex flex-col gap-16 md:gap-32 my-16 md:my-32">
+    <main className="flex flex-col gap-16 md:gap-32 py-16 md:py-32 ">
       <Section1 />
       <Section2 />
       <Section3 />
