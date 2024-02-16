@@ -4,7 +4,7 @@ import CardRecipes from "./CardRecipes";
 export default function AllRecipes() {
   return (
     <section>
-      <h2 className="text-center text-4xl my-24">
+      <h2 className="text-center text-4xl my-24 font-paprika">
         “Cocinar con amor te alimenta el alma”
       </h2>
 
