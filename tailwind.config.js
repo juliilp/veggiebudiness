@@ -10,6 +10,8 @@ export default {
         inter: "'Inter', sans-serif;",
         lobsterTwo: "'Lobster Two', sans-serif;",
         playfairDisplay: "'Playfair Display', serif;",
+        lato: "Lato, serif",
+        paprika: "paprika, serif",
       },
     },
   },
