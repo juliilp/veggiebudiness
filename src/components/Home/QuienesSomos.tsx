@@ -1,4 +1,4 @@
-import imagenQuienesSomos from "../../assets/home/fondo-quienes somos.jpg";
+import imagenQuienesSomos from "../../assets/home/fondo-quienes-somos.jpg";
 
 export default function QuienesSomos() {
   return (
@@ -6,8 +6,13 @@ export default function QuienesSomos() {
       <img
         src={imagenQuienesSomos}
         alt="imagen"
-        className=" absolute top-0 left-0 w-full h-full "
+        className=" absolute top-0 left-0 w-full h-full bg-cover object-cover "
       />
+      {/* Con la imagen que se mueve */}
+      {/* <div
+        style={{ backgroundImage: `url(${imagenQuienesSomos})` }}
+        className=" absolute top-0 left-0 w-full h-full bg-fixed bg-center bg-cover  "
+      /> */}
       <article className="p6 md:p-12 lg:p-24 flex flex-col justify-center items-center gap-8 relative text-white ">
         <div className="w-full h-full absolute top-0 left-0 bg-[#644517] opacity-40  " />
         <h2 className="text-3xl md:text-5xl text-center font-inter font-bold z-10 ">
