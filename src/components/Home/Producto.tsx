@@ -12,7 +12,7 @@ export default function Recetas() {
   console.log(swiper);
 
   return (
-    <section className="my-24">
+    <section className="my-24" id="producto">
       <h2 className="text-3xl md:text-5xl text-center font-lobsterTwo mb-12">
         Algunos de nuestros manjares
       </h2>

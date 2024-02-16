@@ -4,7 +4,10 @@ import { ImFacebook } from "react-icons/im";
 
 export default function Footer() {
   return (
-    <footer className="flex items-center justify-center flex-col gap-12 font-inriaSerif mt-12 mb-4">
+    <footer
+      className="flex items-center justify-center flex-col gap-12 font-inriaSerif mt-12 mb-4"
+      id="contacto"
+    >
       <article className="flex flex-col items-center">
         <p className=" text-center text-xl md:text-2xl">
           Escribinos por Whats App y te contactaremos apenas <br /> veamos tu

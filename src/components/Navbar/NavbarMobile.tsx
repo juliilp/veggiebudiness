@@ -18,15 +18,29 @@ export default function NavbarMobile() {
               Home
             </Link>
           </li>
-          <li>About us</li>
-          <li>Products</li>
+          <li>
+            <Link to="/sobre-nosotros" onClick={handlerSwitchMenu}>
+              About us
+            </Link>
+          </li>
+          <li>
+            <a href="#producto" onClick={handlerSwitchMenu}>
+              Products
+            </a>
+          </li>
           <li>
             <Link to="/recipies" onClick={handlerSwitchMenu}>
               Recipies
             </Link>
           </li>
-          <li>Contact us</li>
-          <li>Follow us</li>
+          <a href="#contacto" onClick={handlerSwitchMenu}>
+            Contact us
+          </a>
+          <li>
+            <a href="#contacto" onClick={handlerSwitchMenu}>
+              Follow us
+            </a>
+          </li>
         </ul>
       )}
     </header>

@@ -8,14 +8,22 @@ export default function NavbarDesktop() {
           <li>
             <Link to="/">Home</Link>
           </li>
-          <li>About us</li>
-          <li>Products</li>
+          <li>
+            <Link to="/sobre-nosotros">About us</Link>
+          </li>
+          <li>
+            <a href="#producto">Products</a>
+          </li>
           <li className="hidden lg:block">Veggie budiness</li>
           <li>
             <Link to="/recipies">Recipies</Link>
           </li>
-          <li>Contact us</li>
-          <li>Follow us</li>
+          <li>
+            <a href="#contacto">Contact us</a>
+          </li>
+          <li>
+            <a href="#contacto">Follow us</a>
+          </li>
         </ul>
       </nav>
     </header>
