@@ -36,11 +36,6 @@ export default function NavbarMobile() {
           <a href="#contacto" onClick={handlerSwitchMenu}>
             Contact us
           </a>
-          <li>
-            <a href="#contacto" onClick={handlerSwitchMenu}>
-              Follow us
-            </a>
-          </li>
         </ul>
       )}
     </header>
