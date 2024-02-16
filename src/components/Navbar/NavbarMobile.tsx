@@ -12,7 +12,7 @@ export default function NavbarMobile() {
       <IoMdMenu onClick={handlerSwitchMenu} size={35} className="mr-4" />
 
       {switchMenu && (
-        <ul className="absolute top-full w-full flex flex-col items-center gap-2 text-xl bg-white ">
+        <ul className="absolute top-full w-full flex flex-col items-center gap-2 text-xl z-[999] bg-white  font-lato ">
           <li>
             <Link to="/" onClick={handlerSwitchMenu}>
               Home
