@@ -28,7 +28,7 @@ export default function Recetas() {
             return (
               <SwiperSlide key={key}>
                 <article className="flex items-center justify-center">
-                  <CardRecetas nombre={r.nombre} imagen={r.imagen} />
+                  <CardRecetas nombre={r.nombre} imagen={r.imagen} id={r.id} />
                 </article>
               </SwiperSlide>
             );
